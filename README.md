@@ -91,3 +91,12 @@ git branch -m master  # Rename the current branch to master
 git push -f origin master  # Force push master branch to origin
 git gc # Clean up .git folder
 ```
+* Remote
+```bash
+# View existing remotes
+git remote -v
+# Delete a remote
+git remote remove name
+# Change name of a remote
+git remote rename old_name new_name
+```
