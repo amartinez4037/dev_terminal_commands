@@ -97,7 +97,7 @@ git fetch --all
 git reset --hard origin/<branch_name>
 ```
 
-* [Mergin branches](http://stackoverflow.com/questions/5601931/best-and-safest-way-to-merge-a-git-branch-into-master)
+* [Merge branches](http://stackoverflow.com/questions/5601931/best-and-safest-way-to-merge-a-git-branch-into-master)
 ```bash
 git checkout master
 git pull origin master # In case master is not up to date
