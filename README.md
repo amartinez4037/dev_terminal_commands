@@ -91,7 +91,27 @@ git branch -m master  # Rename the current branch to master
 git push -f origin master  # Force push master branch to origin
 git gc # Clean up .git folder
 ```
-* Remote
+* Force a 'git pull' and [overwrite local files](http://stackoverflow.com/questions/1125968/how-to-force-git-pull-to-overwrite-local-files)
+```bash
+git fetch --all
+git reset --hard origin/<branch_name>
+```
+
+* [Mergin branches](http://stackoverflow.com/questions/5601931/best-and-safest-way-to-merge-a-git-branch-into-master)
+```bash
+git checkout master
+git pull origin master # In case master is not up to date
+git merge <branch_to_merge>
+git push origin master
+```
+
+* [Delete local/remote branch](http://stackoverflow.com/questions/2003505/how-to-delete-a-git-branch-both-locally-and-remotely)
+```bash 
+git branch -d <branch_name> # local
+git push origin --delete <branch_name> # remote
+```
+
+* Working with remotes
 ```bash
 # View existing remotes
 git remote -v
