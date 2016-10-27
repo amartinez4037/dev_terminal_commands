@@ -110,7 +110,7 @@ git push origin master
 # See all branches
 git branch
 # Creating a new branch
-git branch -b <new_branch_name>
+git checkout -b <new_branch_name>
 # Re-naming current branch
 git branch -m <new_branch_name>
 ```
