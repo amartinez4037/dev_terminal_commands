@@ -105,10 +105,23 @@ git merge <branch_to_merge>
 git push origin master
 ```
 
+* Working with branches
+```bash
+# See all branches
+git branch
+# Creating a new branch
+git branch -b <new_branch_name>
+# Re-naming current branch
+git branch -m <new_branch_name>
+```
+
 * [Delete local/remote branch](http://stackoverflow.com/questions/2003505/how-to-delete-a-git-branch-both-locally-and-remotely)
 ```bash 
-git branch -d <branch_name> # local
-git push origin --delete <branch_name> # remote
+# Delete a local branch
+git branch -d <branch_name>
+git branch -D <branch_name> # force delete 
+# Delete a branch at remote origin
+git push origin --delete <branch_name>
 ```
 
 * Working with remotes
